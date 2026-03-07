@@ -21,16 +21,16 @@
   margin-bottom: 60px;
 }
 
-
-
 .dominator-frame-div{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(408px, 1fr));
+  max-width: calc(4 * 408px + 3 * 14px); /* 4 элемента по 408px и 3 промежутка по 14px */
+  margin: 0 auto; /* центрирование блока */
   gap: 14px
 }
 
 .frame-div{
-background: radial-gradient(125.37% 125.82% at -4.41% -4.61%, rgba(243, 63, 127, 0.59) 0%, rgba(90, 31, 51, 0.2) 100%);
+  background: radial-gradient(125.37% 125.82% at -4.41% -4.61%, rgba(243, 63, 127, 0.59) 0%, rgba(90, 31, 51, 0.2) 100%);
   gap: 10px;
   padding: 138px 40px 40px 40px;
   border-radius: 8px;

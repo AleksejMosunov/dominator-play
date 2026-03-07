@@ -9,11 +9,15 @@
 
 .frame-items-div{
   display: grid;
-  gap: 20px; /* расстояние между элементами */
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 16px; /* расстояние между элементами */
+  grid-template-columns: repeat(auto-fit, minmax(544px, 1fr));
+
+
   justify-content: center; /* чтобы элементы центрировались, если меньше 3 */
 }
 
 .item-img{
-  max-width: 602px
+  width: 100%;
+  height: auto;
+  max-width: 544px;
 }
