@@ -11,12 +11,12 @@
   background: radial-gradient(96.62% 96.62% at 0% 3.38%, #F33F7F 0%, rgba(90, 31, 51, 0.3) 100%);
 }
 
-
 .hero h1{
   color:#FFFFFF;
   font-size:80px;
   font-weight:900;
   line-height: 80px;
+  margin-bottom: 40px;
 }
 
 .hero p{
@@ -24,6 +24,7 @@
   font-size:32px;
   line-height: 32px;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .hero button{

@@ -12,7 +12,7 @@
   margin-bottom: 40px;
 }
 
-.dominator-play-div p{
+.dominator-play-div > p{
  font-size: 32px;
   font-weight: 500;
   line-height: 34px;
@@ -34,6 +34,10 @@ background: radial-gradient(125.37% 125.82% at -4.41% -4.61%, rgba(243, 63, 127,
   gap: 10px;
   padding: 138px 40px 40px 40px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 40px;
 }
 
 .frame-div h2{

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import plus from '../../assets/plus.svg';
+import plus from '../../../../../assets/plus.svg';
 
 
 type ApartButtonProps = {
