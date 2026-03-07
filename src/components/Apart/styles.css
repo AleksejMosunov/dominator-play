@@ -1,0 +1,45 @@
+.apart-btn{
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.apart-button-div{
+  display: flex;
+  padding: 24px 32px;
+  justify-content: space-between;
+  background-color: #492035;
+  border-radius: 9px;
+}
+
+.apart-div{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0 152px;
+  gap: 37px;
+}
+
+.apart-button-div span{
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+
+.apart-left-btn-div{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.apart-right-btn-div{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+

@@ -1,0 +1,53 @@
+.dominator-play-div{
+  margin: 120px 0;
+}
+
+.dominator-play-div h1{
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 80px;
+  text-align: center;
+  color: #FFEDED;
+  margin-bottom: 40px;
+}
+
+.dominator-play-div p{
+ font-size: 32px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
+  color: #FFEDED;
+  margin-bottom: 60px;
+}
+
+
+
+.dominator-frame-div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 14px
+}
+
+.frame-div{
+background: radial-gradient(125.37% 125.82% at -4.41% -4.61%, rgba(243, 63, 127, 0.59) 0%, rgba(90, 31, 51, 0.2) 100%);
+  gap: 10px;
+  padding: 138px 40px 40px 40px;
+  border-radius: 8px;
+}
+
+.frame-div h2{
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.frame-div p{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFEDED;
+}

@@ -1,0 +1,19 @@
+.upcoming-releases-div h1{
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 900;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.frame-items-div{
+  display: grid;
+  gap: 20px; /* расстояние между элементами */
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  justify-content: center; /* чтобы элементы центрировались, если меньше 3 */
+}
+
+.item-img{
+  max-width: 602px
+}

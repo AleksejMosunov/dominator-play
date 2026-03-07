@@ -1,12 +1,13 @@
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logoHeader.svg';
 
 function Header() {
   return (
 
     <div className='header-div'>
       <Link to="/">
-        <h1>To-Do App</h1>
+        <img src={logo} alt="Dominator Play Logo" className='logo' width={344} height={56} />
       </Link>
 
       <Navigation />
