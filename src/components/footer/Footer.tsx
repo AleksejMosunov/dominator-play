@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './styles.css';
 import logo from '../../assets/logo.svg';
 import linkedinIcon from '../../assets/Lin.svg';
@@ -19,10 +19,10 @@ export default function Footer() {
           <span className='footer-email'>
             partners@dominatorplay.com
           </span>
-<div className='footer-social'>
+          <div className='footer-social'>
             <img src={linkedinIcon} alt="linkedin" width={24} height={24} />
-          <img src={facebookIcon} alt="facebook" width={24} height={24} />
-</div>
+            <img src={facebookIcon} alt="facebook" width={24} height={24} />
+          </div>
         </div>
         <div className='footer-explore'>
           <h4 className='footer-title'>EXPLORE</h4>

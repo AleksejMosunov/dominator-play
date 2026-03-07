@@ -1,4 +1,4 @@
-import React from 'react';
+
 import FrameItem from './FrameItem';
 import StayAhead from './StayAhead';
 import './styles.css';
