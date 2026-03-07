@@ -1,0 +1,37 @@
+.header-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px
+}
+
+.nav-btn{
+  border-radius: 9px;
+  border: 1px solid #FF4F8B;
+  background-color: transparent;
+  padding: 12px 24px;
+    font-size: 16px;
+  font-weight: 500;
+  color: #FFEDED;
+
+}
+
+.nav-lang-div{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.nav-news-div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a.nav-item{
+  color: #FFEDED;
+  font-size: 16px;
+  font-weight: 500;
+}

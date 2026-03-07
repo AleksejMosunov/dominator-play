@@ -1,0 +1,6 @@
+.banner-div{
+  background: linear-gradient(89.84deg, #F33F7F 0%, #5A1F33 1000%);
+    backdrop-filter: blur(30px);
+    width: 1000px;
+    height: 400px;
+}
