@@ -49,7 +49,7 @@ export default function FrameItem({ timer }: FrameItemProps) {
     };
   }, [secondsLeft]);
 
-  const progress = Math.max(0, (secondsLeft / START_TOTAL_SECONDS) * 100);
+  // const progress = Math.max(0, (secondsLeft / START_TOTAL_SECONDS) * 100);
 
   return (
     <div className='frame-item-div'
