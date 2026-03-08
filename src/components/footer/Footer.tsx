@@ -26,8 +26,8 @@ export default function Footer() {
         </div>
         <div className='footer-explore'>
           <h4 className='footer-title'>EXPLORE</h4>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <li><Link to="/">Home</Link></li>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', color: 'red' }}>
+            <Link to="/">Home</Link>
             <li><Link to="/games">Our Games</Link></li>
             <li><Link to="/about">About us</Link></li>
             <li><Link to="/events">Events</Link></li>

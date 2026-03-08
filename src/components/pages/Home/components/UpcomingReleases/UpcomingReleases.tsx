@@ -9,7 +9,6 @@ export default function UpcomingReleases() {
       <h1>
         Upcoming Releases
       </h1>
-
       <div className='frame-items-div'>
         <FrameItem timer={true} />
         <FrameItem timer={false} />

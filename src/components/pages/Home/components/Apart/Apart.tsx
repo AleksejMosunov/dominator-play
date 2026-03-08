@@ -14,10 +14,10 @@ export default function Apart() {
             What makes us different
           </h2>
           <div className='apart-left-btn-div'>
-            <ApartButton text='Custom Game Development' />
-            <ApartButton text='Data-Driven Game Design' />
-            <ApartButton text='Dedicated Support Team' />
-            <ApartButton text='Revenue Growth Focus' />
+            <ApartButton text='Flexible game customization' />
+            <ApartButton text='Gamification with advantage' />
+            <ApartButton text='Configurable game architecture' />
+            <ApartButton text='Designed for lobby visibility' />
           </div>
         </div>
         <div className='apart-right-part'>
@@ -25,10 +25,10 @@ export default function Apart() {
             Partner benefits
           </h2>
           <div className='apart-right-btn-div'>
-            <ApartButton text='Custom Game Development' />
-            <ApartButton text='Data-Driven Game Design' />
-            <ApartButton text='Dedicated Support Team' />
-            <ApartButton text='Revenue Growth Focus' />
+            <ApartButton text='24/7 technical support' />
+            <ApartButton text='Exclusive early access' />
+            <ApartButton text='Real-time analytics' />
+            <ApartButton text='Custom integration' />
           </div>
         </div>
       </div>

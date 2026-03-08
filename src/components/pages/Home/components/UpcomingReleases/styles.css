@@ -1,6 +1,6 @@
-.upcoming-releases-div h1{
-  font-size: 80px;
-  line-height: 80px;
+.upcoming-releases-div > h1{
+font-size: clamp(36px, 4vw, 80px);
+  line-height: clamp(36px, 4vw, 80px);
   font-weight: 900;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -11,13 +11,113 @@
   display: grid;
   gap: 16px; /* расстояние между элементами */
   grid-template-columns: repeat(auto-fit, minmax(544px, 1fr));
-
-
-  justify-content: center; /* чтобы элементы центрировались, если меньше 3 */
+  grid-auto-rows: clamp(320px, 34vw, 602px);
+  align-items: stretch;
 }
 
 .item-img{
   width: 100%;
-  height: auto;
-  max-width: 544px;
+  height: 100%;
+  object-fit: inherit;
+  display: block;
+}
+
+.frame-item-div {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stay-ahead-div-release{
+  background: radial-gradient(96.62% 96.62% at 0% 3.38%, #F33F7F 0%, rgba(90, 31, 51, 0.3) 100%);
+  text-align: center;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 0;
+  height: calc(100% - 7px);
+  align-self: center;
+}
+
+.stay-ahead-div-release > h1 {
+  font-size: clamp(36px, 4vw, 45px);
+  line-height: clamp(36px, 4vw, 45px);
+  font-weight: 900;
+  color: #FFEDED;
+  text-transform: uppercase;
+}
+
+.stay-ahead-div-release > button {
+  font-size: 18px;
+  line-height: 16px;
+  background: #FF4F8B;
+  border-radius: 8px;
+  border: none;
+  padding: 33px 66px 33px 66px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.timer-div{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  width: min(90%, 420px);
+}
+
+.timer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 5px
+}
+
+.timer-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.item-timer {
+  color: #FF4F8B;
+  font-size: clamp(18px, 2.4vw, 60px);
+  line-height: clamp(18px, 2.4vw, 80px);
+  font-weight: 700;
+}
+
+.timer-label {
+  color: #FFEDED;
+  font-size: clamp(10px, 1.4vw, 16px);
+  line-height: clamp(16px, 2.4vw, 16px);
+  font-weight: 700;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.progress {
+  width: min(100%, 300px);
+  height: 8px;
+  border-radius: 999px;
+  background: transparent;
+  overflow: hidden;
+  border: 2px solid #5A1F33;
+}
+
+.progress-bar {
+  width: 90%;
+  height: 100%;
+  border-radius: 999px;
+  background: #FF4F8B;
+
 }
