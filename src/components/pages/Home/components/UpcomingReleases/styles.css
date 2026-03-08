@@ -23,7 +23,6 @@ font-size: clamp(36px, 4vw, 80px);
 }
 
 .frame-item-div {
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -76,10 +75,9 @@ font-size: clamp(36px, 4vw, 80px);
 }
 
 .timer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: center;
-  gap: 5px
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
 }
 
 .timer-cell {
@@ -92,12 +90,11 @@ font-size: clamp(36px, 4vw, 80px);
 .item-timer {
   color: #FF4F8B;
   font-size: clamp(18px, 2.4vw, 60px);
-  line-height: clamp(18px, 2.4vw, 80px);
+  line-height: clamp(18px, 2.4vw, 89px);
   font-weight: 700;
 }
 
 .timer-label {
-  color: #FFEDED;
   font-size: clamp(10px, 1.4vw, 16px);
   line-height: clamp(16px, 2.4vw, 16px);
   font-weight: 700;
@@ -119,5 +116,15 @@ font-size: clamp(36px, 4vw, 80px);
   height: 100%;
   border-radius: 999px;
   background: #FF4F8B;
+}
 
+.days-timer span {
+  color: rgba(26, 26, 26, 1);
+}
+
+.points-timer {
+  color: grey;
+  font-size: clamp(36px, 4vw, 60px);
+  line-height: clamp(36px, 4vw, 80px);
+  font-weight: 600;
 }
