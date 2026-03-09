@@ -16,12 +16,16 @@ export default function Footer() {
           <span className='footer-info-text'>
             Our website is intended for<br />users aged 18 and over.
           </span>
-          <span className='footer-email'>
+          <a className='footer-email' href='mailto:partners@dominatorplay.com'>
             partners@dominatorplay.com
-          </span>
+          </a>
           <div className='footer-social'>
-            <img src={linkedinIcon} alt="linkedin" width={24} height={24} />
-            <img src={facebookIcon} alt="facebook" width={24} height={24} />
+            <a style={{ border: 'none', cursor: 'pointer' }}>
+              <img src={linkedinIcon} alt="linkedin" width={24} height={24} />
+            </a>
+            <a style={{ border: 'none', cursor: 'pointer' }}>
+              <img src={facebookIcon} alt="facebook" width={24} height={24} />
+            </a>
           </div>
         </div>
         <div className='footer-explore'>

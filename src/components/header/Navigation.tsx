@@ -11,14 +11,14 @@ function Navigation() {
       <Link to="/about" className="nav-item">About Us</Link>
       <div className='nav-news-div'>
         <Link to="/news" className="nav-item">News</Link>
-        <button style={{ backgroundColor: 'transparent', border: 'none' }}>
+        <button style={{ backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}>
           <img src={arrowIcon} alt="arrow" width={20} height={20} />
         </button>
 
       </div>
       <div className='nav-lang-div'>
         <img src={langIcon} alt="language" width={20} height={20} />
-        <button style={{ backgroundColor: 'transparent', border: 'none' }}>
+        <button style={{ backgroundColor: 'transparent', border: 'none', cursor: 'pointer' }}>
           <img src={arrowIcon} alt="arrow" width={20} height={20} />
         </button>
       </div>
