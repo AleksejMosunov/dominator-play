@@ -2,9 +2,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 47px 120px 0 120px;
+  padding: clamp(20px, 4vw, 47px) clamp(16px, 6vw, 120px) 0;
 }
 
 .content{
   flex: 1;
+}
+
+@media (max-width: 640px) {
+  .main-layout {
+    padding-top: 16px;
+  }
 }

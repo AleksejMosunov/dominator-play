@@ -4,7 +4,19 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 32px
+    gap: clamp(12px, 2vw, 32px)
+}
+
+.header-div .logo {
+  width: clamp(200px, 34vw, 344px);
+  height: auto;
+}
+
+.header-div nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-btn{
@@ -34,4 +46,21 @@ a.nav-item{
   color: #FFEDED;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .header-div {
+    justify-content: center;
+  }
+
+  .header-div nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-btn {
+    width: 100%;
+    max-width: 220px;
+  }
 }

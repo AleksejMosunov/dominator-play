@@ -7,10 +7,11 @@
 
 .apart-button-div{
   display: flex;
-  padding: 24px 32px;
+  padding: clamp(14px, 2.6vw, 24px) clamp(16px, 3vw, 32px);
   justify-content: space-between;
   background-color: #492035;
   border-radius: 9px;
+  gap: 12px;
 }
 
 .apart-div{
@@ -19,14 +20,14 @@
   justify-content: space-around;
   flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 0 52px;
-  gap: 37px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  padding: 0 clamp(0px, 3vw, 52px);
+  gap: clamp(16px, 3vw, 37px);
 }
 
 .apart-button-div span{
-  font-size: 24px;
-  line-height: 25px;
+  font-size: clamp(16px, 2.2vw, 24px);
+  line-height: 1.2;
   font-weight: 500;
   color: #FFFFFF;
 }
@@ -34,40 +35,40 @@
 
 .apart-left-btn-div{
   display: flex;
-  gap: 24px;
+  gap: clamp(12px, 2vw, 24px);
   flex-direction: column;
 }
 
 .apart-right-btn-div{
   display: flex;
-  gap: 24px;
+  gap: clamp(12px, 2vw, 24px);
   flex-direction: column;
 }
 
 .apart-container > h2 {
-  font-size: 80px;
-  line-height: 80px;
+  font-size: clamp(36px, 8vw, 80px);
+  line-height: 1;
   font-weight: 900;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 120px 0 60px 0;
+  margin: clamp(56px, 8vw, 120px) 0 clamp(24px, 5vw, 60px) 0;
   text-align: center;
 }
 
 .apart-left-part > h2 {
-  font-size: 48px;
-  line-height: 45px;
+  font-size: clamp(26px, 4.5vw, 48px);
+  line-height: 1.05;
   font-weight: 700;
   color: #FFFFFF;
   text-align: left;
-  margin-bottom: 34px;
+  margin-bottom: clamp(16px, 3vw, 34px);
 }
 
 .apart-right-part > h2 {
-  font-size: 48px;
-  line-height: 45px;
+  font-size: clamp(26px, 4.5vw, 48px);
+  line-height: 1.05;
   font-weight: 700;
   color: #FFFFFF;
   text-align: left;
-  margin-bottom: 34px;
+  margin-bottom: clamp(16px, 3vw, 34px);
 }

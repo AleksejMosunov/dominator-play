@@ -1,10 +1,10 @@
 .dominator-play-div{
-  margin: 120px 0;
+  margin: clamp(56px, 8vw, 120px) 0;
 }
 
 .dominator-play-div h1{
   font-size: clamp(36px, 8vw, 80px);
-  line-height: clamp(36px, 8vw, 80px);
+  line-height: 1;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -13,44 +13,44 @@
 }
 
 .dominator-play-div > p{
- font-size: 32px;
+  font-size: clamp(18px, 3vw, 32px);
   font-weight: 500;
-  line-height: 34px;
+  line-height: 1.2;
   text-align: center;
   color: #FFEDED;
-  margin-bottom: 60px;
+  margin: 0 auto clamp(28px, 5vw, 60px);
+  max-width: 44ch;
 }
 
 .dominator-frame-div{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(408px, 1fr));
-  max-width: calc(4 * 408px + 3 * 14px); /* 4 элемента по 408px и 3 промежутка по 14px */
-  margin: 0 auto; /* центрирование блока */
-  gap: 14px
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  max-width: 100%;
+  margin: 0 auto;
+  gap: clamp(10px, 1.6vw, 14px);
 }
 
 .frame-div{
   background: radial-gradient(125.37% 125.82% at -4.41% -4.61%, rgba(243, 63, 127, 0.59) 0%, rgba(90, 31, 51, 0.2) 100%);
-  gap: 10px;
-  padding: 138px 40px 40px 40px;
+  padding: clamp(72px, 12vw, 138px) clamp(18px, 3vw, 40px) clamp(20px, 3vw, 40px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 40px;
+  gap: clamp(18px, 4vw, 40px);
 }
 
 .frame-div h2{
-  font-size: 42px;
-  line-height: 42px;
+  font-size: clamp(28px, 4.2vw, 42px);
+  line-height: 1.05;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
 }
 
 .frame-div p{
-  font-size: 24px;
-  line-height: 32px;
+  font-size: clamp(18px, 2.4vw, 24px);
+  line-height: 1.3;
   font-weight: 400;
   text-align: left;
   color: #FFEDED;
