@@ -59,6 +59,7 @@ export default function FrameItem({ timer }: FrameItemProps) {
       }}
     >
       <img
+        loading='lazy'
         className="item-img"
         src={timer ? img : img2}
         alt="frame-item"
