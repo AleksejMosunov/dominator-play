@@ -10,9 +10,9 @@ font-size: clamp(36px, 4vw, 80px);
 
 .frame-items-div{
   display: grid;
-  gap: 16px; /* расстояние между элементами */
-  grid-template-columns: repeat(auto-fit, minmax(544px, 1fr));
-  grid-auto-rows: clamp(320px, 34vw, 602px);
+  gap: clamp(10px, 1.8vw, 16px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: clamp(520, 30vw, 520px);
   align-items: stretch;
 }
 
@@ -26,6 +26,7 @@ font-size: clamp(36px, 4vw, 80px);
 .frame-item-div {
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .stay-ahead-div-release{
@@ -38,8 +39,20 @@ font-size: clamp(36px, 4vw, 80px);
   align-items: center;
   gap: 40px;
   min-height: 0;
-  height: calc(100% - 7px);
+  height: 100%;
   align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .frame-items-div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .frame-items-div {
+    grid-template-columns: 1fr;
+  }
 }
 
 .stay-ahead-div-release > h1 {
